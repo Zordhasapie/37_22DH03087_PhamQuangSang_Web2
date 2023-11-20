@@ -12,6 +12,8 @@
     <!-- Tailwind -->
     <link rel="stylesheet" href="./Assets/Styles/tailwind.css">
 
+    <!-- FONT LOADER -->
+    <link rel="stylesheet" href="./Assets/Styles/font.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./Assets/Styles/app.css">
@@ -48,25 +50,28 @@
                                 fill="#C28F2C"></path>
                         </g>
                     </svg>
-                    <span class="mt-1 text-blue-300 font-bold">Liên minh tổng hợp</span>
+                    <span class="mt-1 text-blue-300 font-bold">LOL.GG</span>
                 </a>
             </div>
 
             <div class="nav-list hidden sm:ml-6 sm:block">
                 <div class="flex space-x-4">
                     <a href="#"
-                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Game</a>
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Home</a>
                     <a href="#"
-                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Champions</a>
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Tướng</a>
                     <a href="#"
-                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">News</a>
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Tin
+                        Tức</a>
                     <a href="#"
-                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Patch
-                        Notes</a>
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Tuyển
+                        Thủ</a>
                     <a href="#"
-                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Discover</a>
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Phiên
+                        bản</a>
                     <a href="#"
-                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Esports</a>
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">About
+                        Us</a>
                 </div>
 
             </div>
@@ -80,48 +85,107 @@
         </nav>
 
     </header>
+    <!-- end navigation -->
 
-    <main class="main-content">
-        <div class="flex flex-col banner inset-x-0 mx-auto w-full bg-slate-600 align-center">
-            <img class="mx-auto mt-5 border-2 border-indigo-500" id="banner-image"
-                src="Assets/images/Worlds_2023_banner.png" alt="">
+    <main class="main-content bg-gradient-to-b from-slate-700 to-gray-900 pb-5">
+        <div
+            class="flex flex-col banner inset-x-0 mx-auto w-full bg-gradient-to-br from-orange-800 via-rose-950 to-black align-center">
+            <img class="mx-auto mt-5" id="banner-image" src="Assets/images/Worlds_2023_banner.png" alt="">
         </div>
         <div class="grid gap-5 grid-cols-7 w-4/5 mx-auto" id="content-area">
             <div class="col-span-5">
                 <div class="flex flex-col mt-20 mb-1">
-                    <div class="w-full border-black border-b-4 text-5xl font-semibold rounded">
-                        <h1 class="mb-2">
-                            CỤC CỨT TRÔI SÔNG
+                    <div class="flex justify-between w-full border-slate-200 text-slate-200 border-b-4 font-semibold rounded">
+                        <h1 class="mb-2 text-5xl ">
+                            Tin mới
                         </h1>
-                    </div>
-                    
-                    <div class="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl">
-                        <div class="relative flex w-full items-center overflow-hidden bg-white px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
-                            <div class="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-12 lg:gap-x-8">
-                                <div class="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:col-span-4 lg:col-span-5">
-                                    <img src="./Assets/images/Worlds_2023_banner.png" width="500" height="500" alt="">
-                                </div>
-
-                                <div class="sm:col-span-8 lg:col-span-7">
-                                    <h2 class="text-2xl font-bold text-gray-900 sm:pr-12">Faker what was that ??</h2>
-
-                                    <section class="mt-2">
-                                        <h3 class="sr-only">
-                                            
-                                        </h3>
-                                    </section>
-                                </div>
-                            </div>
+                        <div class="relative w-2/3 h-auto">
+                            <a href=""
+                                class="flex flex-row absolute bottom-0 right-0 w-auto h-auto mb-0 text-lg hover:text-white hover:translate-x-1 duration-75">
+                                <span class="">đi đến trang tin tức</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevrons-right mt-1">
+                                    <path d="m6 17 5-5-5-5" />
+                                    <path d="m13 17 5-5-5-5" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
-
+                    <div class="flex flex-col">
+                        <div class="transition ease-in-out hover:-translate-y-1 duration-150 mt-2 mx-2">
+                            <a href="https://www.youtube.com/watch?v=oBpZb7Y496o"
+                                class="flex flex-col items-start bg-white hover:bg-slate-200  shadow md:flex-row ">
+                                <img class="object-cover w-full news-thumnail "
+                                    src="./Assets/images/News/LoL_W23_Thumbnail_OC_Textless.jpg" alt="">
+                                <div class="flex flex-col justify-between p-4 leading-normal w-full h-full">
+                                    <h4 class="text-lg mb-2 font-bold text-blue-500 capitalize text-end">ESPORT</h4>
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                                        CKTG Lễ khai mạc trận chung kết tổng</h5>
+                                    <p class="mb-3 text-lg font-normal text-gray-700 ">
+                                        Được tài trợ bởi Mastercard và thể hiện bởi nhóm nhạc NewJeans, Heartsteel và
+                                        còn nhiều nghệ sĩ khác...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="transition ease-in-out hover:-translate-y-1 duration-150 mt-2 mx-2">
+                            <a href="./News/13.22_patch.html"
+                                class="flex flex-col items-start rounded-lg bg-white shadow md:flex-row hover:bg-slate-200 ">
+                                <img class="object-cover w-full rounded-t-lg news-thumnail md:rounded-none md:rounded-s-lg"
+                                    src="./Assets/images/News/LOL_PROMOART_5.jpg" alt="">
+                                <div class="flex flex-col justify-between p-4 leading-normal w-full h-full">
+                                    <h4 class="text-lg mb-2 font-bold text-blue-500 capitalize text-end">PATCH NOTE</h4>
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                                        Chi tiết cập nhật patch 13.22</h5>
+                                    <ul class="list-disc">
+                                        Các thay đổi chính:
+                                        <li class="ms-5">Tốc độ đánh của tướng pháp sư và tướng giống pháp sư</li>
+                                        <li class="ms-5">Một số thay đổi về rừng</li>
+                                        <li class="ms-5">Thay đổi cân bằng</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="transition ease-in-out hover:-translate-y-1 duration-150 mt-2 mx-2">
+                            <a href="https://www.youtube.com/watch?v=oBpZb7Y496o"
+                                class="flex flex-col items-start rounded-lg bg-white shadow md:flex-row hover:bg-slate-200 ">
+                                <img class="object-cover w-full rounded-t-lg news-thumnail md:rounded-none md:rounded-s-lg"
+                                    src="./Assets/images/News/SN24_GameplayTeaser-Thumbnail-Textless-1920x1080_Aveiger_R01.jpg"
+                                    alt="">
+                                <div class="flex flex-col justify-between p-4 leading-normal w-full h-full">
+                                    <h4 class="text-lg mb-2 font-bold text-blue-500 capitalize text-end">GAME UPDATE</h4>
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                                        Teaser tiền mùa giải 2024</h5>
+                                    <p class="mb-3 font-normal text-gray-700 ">Mùa giải 2024 có gì mới, hãy theo dõi
+                                        teaser mới nhất về những thay đổi có thể sẽ xuất hiện ở đây.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="transition ease-in-out hover:-translate-y-1 duration-150 mt-2 mx-2">
+                            <a href="https://www.youtube.com/watch?v=G8tL3g-gDjo"
+                                class="flex flex-col items-start rounded-lg bg-white shadow md:flex-row hover:bg-slate-200 ">
+                                <img class="news-thumnail object-cover w-full rounded-t-lg md:rounded-none md:rounded-s-lg"
+                                    src="./Assets/images/News/Hwei_YouTube_Champion_Trailer_SMcCrumb_V5-textless.jpg"
+                                    alt="">
+                                <div class="flex flex-col justify-between p-4 leading-normal w-full h-full">
+                                    <h4 class="text-lg mb-2 font-bold text-blue-500 capitalize text-end">GAME UPDATE</h4>
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                                        Trailer tướng mới Hwei</h5>
+                                    <p class="mb-3 font-normal text-gray-700 ">Vị tướng tiếp theo sẽ dến với Liên Minh
+                                        là ai? Anh ta có khả năng gì? Trailer này sẽ bật mí phần nào thắc mắc...</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+
             <div class="col-span-2">
                 <div class="flex flex-row mt-20 mb-1">
-                    <div class="w-full border-black border-b-4 text-5xl font-semibold">
-                        <h1 class="mb-2">
+                    <div class="w-full border-slate-200 text-slate-200 border-b-4  font-semibold">
+                        <h1 class="mb-2 text-5xl">
                             Tuyển Thủ
                         </h1>
                     </div>
@@ -134,9 +198,40 @@
         </div>
     </main>
 
-    <footer style="height: 1000px;">
 
+    <footer class="shadow bg-gray-900">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="http://github.com/Zordhasapie"
+                    class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="./Assets/images/Me/me.jpg" class="h-8 rounded-full" alt="Zord" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Zord</span>
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-gray-400">
+                    <li>
+                        <a href="./About_Us.html" class="hover:underline me-4 md:me-6">About me</a>
+                    </li>
+                    <li>
+                        <a href="https://leagueoflegends.com/" class="hover:underline me-4 md:me-6">League of
+                            Legends</a>
+                    </li>
+                    <li>
+                        <a href="https://riotgames.com/" class="hover:underline me-4 md:me-6">Riot Games</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+            <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+            <span class="block text-sm text-center text-gray-400">Trang web sử dụng hình ảnh từ Riot Games. Mọi quyền
+                hình ảnh thuộc về Riot Games.</span>
+            <span class="block text-sm text-center text-gray-400">© 2023 <a href="http://github.com/Zordhasapie"
+                    class="hover:underline">Zord</a>. All Rights Reserved.</span>
+        </div>
     </footer>
+
+
 
     <!-- Main Scripts -->
     <script src="./Assets/Scripts/app.js"></script>

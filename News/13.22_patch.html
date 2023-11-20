@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- JQuery -->
+    <script src="../Assets/Scripts/jquery-3.7.1.min.js"></script>
+
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="../Assets/Styles/tailwind.css">
+
+    <!-- FONT LOADER -->
+    <link rel="stylesheet" href="../Assets/Styles/font.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../Assets/Styles/app.css">
+
+
+    <!-- Custom css -->
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- navigation -->
+    <header class="w-full inset-x-0 top-0 z-0 mx-auto bg-black text-gray-400">
+        <nav class="flex flex-row h-16 justify-between items-center">
+            <div class="flex flex-row nav-head ml-6">
+                <a class="flex flex-row" href="#" data-testid="riotbar:header:themeLogo-desktop">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="30" height="32" viewBox="0 0 30 32"
+                        fill="none">
+                        <g>
+                            <path
+                                d="M1.80644 9.75049C0.655032 11.8373 0 14.2271 0 16.7683C0 19.3095 0.655032 21.7015 1.80644 23.7883V9.75049Z"
+                                fill="#C28F2C"></path>
+                            <path
+                                d="M15 2.02222C13.7829 2.02222 12.602 2.16921 11.4688 2.43647V4.75718C12.5907 4.44093 13.7738 4.26721 15 4.26721C22.0218 4.26721 27.7153 9.84627 27.7153 16.7305C27.7153 19.8307 26.5571 22.6659 24.6464 24.8463L24.2838 26.118L23.4814 28.9331C27.4184 26.2761 30.0023 21.8195 30.0023 16.7705C30 8.62355 23.2843 2.02222 15 2.02222Z"
+                                fill="#C28F2C"></path>
+                            <path
+                                d="M11.4688 24.4209H22.9737H23.2253C25.1723 22.4209 26.3713 19.7126 26.3713 16.7305C26.3713 10.5746 21.2806 5.58569 15 5.58569C13.767 5.58569 12.5816 5.78168 11.4688 6.1358V24.4209Z"
+                                fill="#C28F2C"></path>
+                            <path
+                                d="M10.1088 0H1.55029L3.16634 3.29844V28.7038L1.55029 32H21.1922L22.9737 25.7572H10.1088V0Z"
+                                fill="#C28F2C"></path>
+                        </g>
+                    </svg>
+                    <span class="mt-1 text-blue-300 font-bold">LOL.GG</span>
+                </a>
+            </div>
+
+            <div class="nav-list hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                    <a href="#"
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#"
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Tướng</a>
+                    <a href="#"
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Tin
+                        Tức</a>
+                    <a href="#"
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Tuyển
+                        Thủ</a>
+                    <a href="#"
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Phiên
+                        bản</a>
+                    <a href="#"
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">About
+                        Us</a>
+                </div>
+
+            </div>
+
+            <div class="nav-end order-last">
+                <button type="button"
+                    class="px-4 py-2 font-semibold text-sm bg-slate-700 text-white border border-slate-300 dark:border-slate-600 hover:border-indigo-300 dark:hover:border-indigo-500 rounded-md shadow-sm mr-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300">
+                    Buy organs now
+                </button>
+            </div>
+        </nav>
+
+    </header>
+    <!-- end navigation -->
+
+    <main class="main-content">
+        <div class="banner inset-x-0 mx-auto w-full bg-gradient-to-br from-orange-800 via-rose-950 to-black relative">
+            <img class="mx-auto w-5/6" id="banner-image" src="../Assets/images/News/P13.22_banner.png" alt="">
+            <div
+                class="absolute inset-x-0 bottom-0 flex flex-col items-center justify-center bg-gradient-to-b from-transparent to-black">
+                <h1 class="text-white text-4xl font-bold italic pt-10">PATCH NOTE 13.22</h1>
+                <hr class="pb-10 w-2/3">
+            </div>
+        </div>
+        <div class="flex flex-col w-full mx-auto  bg-gradient-to-b from-black to-gray-900 pb-5 text-white"
+            id="content-area">
+            <div class="container w-2/3 mx-auto prose text-white lg:prose-lg max-w-none prose-slate prose-invert">
+                <blockquote>
+                    <p>
+                        Chắc chắn bạn không hề hoang tưởng đâu, Phiên Bản 13.22 đã chính thức ra mắt rồi!
+
+                        Ngoài những thay đổi cân bằng thông thường, phiên bản này mang đến hai cập nhật lớn:
+                    <ul class="list-disc">
+                        <li class="list-item">
+
+                            Tinh chỉnh tốc độ đánh cho dàn tướng Pháp Sư
+                            Chúng tôi nhận thấy nhiều tướng Pháp Sư có tốc độ đánh khá chậm và muốn đưa (hầu hết) tất cả
+                            lên
+                            một
+                            mức
+                            cơ sở mới về tốc độ đạn và độ nhạy của hoạt ảnh tấn công cơ bản. Đối với những tướng có kỹ
+                            năng
+                            thay
+                            thế
+                            đòn đánh thường như Karthus và Fiddlesticks thì sẽ có ngoại lệ. Bên cạnh đó, chúng tôi cũng
+                            sẽ
+                            tăng
+                            tốc
+                            độ đánh cơ bản ở cấp độ đầu cho một số tướng Pháp Sư thường sử dụng Ngọc Tốc Độ Đánh, không
+                            có
+                            những
+                            tương tác mạnh mẽ với đòn đánh thường trong bộ kỹ năng và không có tốc độ đánh cao ở cấp độ
+                            1.
+                        </li>
+                        <li class="list-item">
+                            Cập nhật bộ kỹ năng toàn diện cho Janna
+                            Chúng tôi sẽ hồi sinh một số yếu tố trong bộ kỹ năng của Janna từ vài năm trước với mục tiêu
+                            biến cô
+                            nàng trở thành một người tham gia tích cực hơn trong trận đấu và ít phụ thuộc vào những cơn
+                            lốc
+                            tầm
+                            xa.
+                        </li>
+                    </ul>
+                    Ngoài ra, trong phiên bản này, bạn cũng có thể thử sức với những trang phục Heartsteel mới
+                    mẻ,
+                    khám
+                    phá
+                    biến thể thần thoại mới Breakout True Damage Ekko và đón nhận sự thay đổi của Cửa Hàng Thần
+                    Thoại.
+                    Chúng
+                    tôi cũng đã đưa ra một số điều chỉnh cho ARAM và Nexus Blitz để cân bằng hơn!</p>
+                </blockquote>
+                <h1 class="text-yellow-300 italic"><strong>• Patch Highlights</strong></h1>
+                <figure class="border-b border-slate-500">
+                    <img src="../Assets/images/News/13.22Highlights.jpg" alt="" srcset="">
+                </figure>
+                <ul class="list-none">
+                    <li class="border-b border-slate-500">
+                        <h2 class="text-yellow-300 italic ms-2"><strong>• Điều Chỉnh Tầm Nhìn</strong></h2>
+                        <article class="w-4/5 mx-auto ">
+                            <blockquote>
+                                <p>
+                                    Chúng tôi sẽ điều chỉnh tầm nhìn hiện lên khi tấn công từ sương mù trong Summoner's
+                                    Rift. Những người chơi giàu kinh nghiệm hiểu rằng việc tấn công từ trong bụi khiến
+                                    cho bụi rậm đó không còn tác dụng nữa và gần như không cần quan tâm, nhưng cũng gần
+                                    như không thể nào biết được bạn bị lộ diện trong bao lâu khi thực hiện những thao
+                                    tác thông thường như tấn công kẻ địch phía sau một bức tường. Điều này cũng đi kèm
+                                    một hệ lụy đó là đôi khi làm lộ diện những đồng đội đang ẩn nấp của bạn. Chúng tôi
+                                    sẽ cắt bớt bán kính lộ diện để giảm các tình huống làm lộ diện đồng đội, đồng thời
+                                    giảm thời gian lộ diện để việc trốn trở lại vào vùng sương mù trở nên mượt mà hơn.
+                                </p>
+                            </blockquote>
+                            <ul>
+                                <li>Bán kính lộ diện khi tấn công: 400 ⇒ 300</li>
+                                <li>
+                                    Thời gian duy trì khu vực lộ diện: 4,5 giây ⇒ 2 giây</li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="border-b border-slate-500">
+                        <h2 class="text-yellow-300 italic ms-2"><strong>• Điều Chỉnh Tầm Nhìn</strong></h2>
+                        <article class="w-4/5 mx-auto ">
+                            <blockquote>
+                                <p>
+                                    Nhìn chung, chúng tôi sẽ tiếp tục cải thiện hệ thống ping báo hiệu và hiện tại coi
+                                    như là chúng đã thành công theo những mục tiêu ban đầu. Chúng tôi đã thấy có sự cải
+                                    thiện đáng kể trong việc giúp người chơi cảm thấy được tôn trọng và an toàn hơn
+                                    trong trò chơi sau những thay đổi này và việc giới hạn đấu xếp hạng. Chúng tôi vẫn
+                                    đang cố gắng cân bằng giữa những tùy chọn giao tiếp tích cực và bảo vệ người chơi
+                                    khỏi những công cụ giao tiếp tiêu cực.
+                                </p>
+                            </blockquote>
+                            <ul>
+                                <li>Ăn mừng thỏa thích: Trong 10 giây sau khi hạ một mục tiêu khủng, toàn bộ ping từ
+                                    đồng minh hướng đến tướng của bạn sẽ được hiển thị cho cả đội.</li>
+                                <li>
+                                    Hoàn trả bộ đếm thời gian khóa ping: 5 giây/15 giây/30 giây/60 giây/120 giây ⇒ 6
+                                    giây/12 giây/16 giây/20 giây/24 giây. Thay đổi này đã được áp dụng từ 13.19 nhưng
+                                    không được đưa vào ghi chú.</li>
+                                <li>
+                                    Ping "Cảnh Báo" và "Kẻ Địch Mất Dạng" chỉ có thể được sử dụng 3 lần trước khi bị
+                                    giới hạn tốc độ.</li>
+                            </ul>
+                            <hr>
+                            <h3>Những Lỗi Đã Biết Sau Khi Thay Đổi Ping Báo Hiệu</h3>
+                            <ul>
+                                <li>Gửi ping hồi chiêu trang bị, chiêu cuối hoặc Phép Bổ Trợ của đồng đội trên bảng điểm
+                                    khi hồi chiêu đã qua 50% sẽ hiển thị [Tổ đội] trước văn bản ping dù cho nó vẫn được
+                                    phát cho toàn đội.</li>
+                            </ul>
+                        </article>
+                    </li>
+
+                    <li class="border-b border-slate-500">
+                        <h2 class="text-yellow-300 italic ms-2"><strong>• Điều Chỉnh ARAM</strong></h2>
+                        <article class="w-4/5 mx-auto ">
+                            <h3>Tăng Sức Mạnh</h3>
+                            <ul>
+                                <li>Lilia: Sát Thương Gánh Chịu: 110% ⇒ 105%</li>
+                                <li>Aphelios: Sát Thương Gánh Chịu: 100% ⇒ 95%</li>
+                            </ul>
+                            <hr>
+                            <h3>Giảm Sức Mạnh</h3>
+                            <ul>
+                                <li>K'Sante: Sát Thương Gánh Chịu: 90% ⇒ 95%</li>
+                                <li>Tryndamere: Khả Năng Hồi Máu: 140% ⇒ 135%</li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li>
+                        <h2 class="text-yellow-300 italic ms-2"><strong>• Sửa Lỗi & Nâng Cấp Chất Lượng Trải
+                                Nghiệm</strong></h2>
+                        <article class="w-4/5 mx-auto ">
+                            <ul>
+                                <li>Sửa một lỗi khiến Nội Tại của Renata Glasc ngay lập tức tiêu diệt Zac khi một đồng
+                                    minh tấn công phân thân hồi sinh của Zac đang có nội tại bùa hại của cô.</li>
+                                <li>Sửa một lỗi khiến Pix đôi khi ngăn người chơi Lulu nhận được mạng hạ gục.</li>
+                                <li>Sửa một lỗi khiến nếu mục tiêu của chiêu R - Briar trở nên không thể chỉ định khi
+                                    phóng tới sẽ xảy ra ngắt kết nối hàng loạt.</li>
+                                <li>Sửa một lỗi khiến mô tả chiêu W của Janna hiển thị thông tin không chính xác.</li>
+                                <li>Sửa lỗi khiến chỉ báo nội tại của Kai'Sa và Braum bị chồng chéo lên nhau.</li>
+                                <li>Sửa một lỗi khiến hiệu ứng hình ảnh tàng hình của linh thú đi rừng hiển thị với tất
+                                    cả kẻ địch, đồng thời làm lộ diện những tướng đang tàng hình.</li>
+                                <li>Sửa một lỗi mô tả không chính xác của Cung Gỗ.</li>
+                                <li>Sửa một lỗi liên quan đến ASU của Skarner, không thể nói cho bạn biết nó là gì nhưng
+                                    chúng tôi đã khắc phục nó, cứ yên tâm.</li>
+                                <li>Sửa một lỗi khiến nếu Briar tiêu diệt Baron bằng Cắn Miếng Nào, cô sẽ nhận được chỉ
+                                    số tiêu diệt của tất cả các lính mang sức mạnh Baron.</li>
+                                <li>Sửa một lỗi khiến Cuồng Huyết của Briar được tính là Khống Chế trong tóm tắt nguyên
+                                    nhân chết và tính vào điểm khống chế trong chỉ số sau trận đấu.</li>
+                                <li>Sửa một lỗi khiến đòn đánh thường của Briar bị vô hiệu hóa sau khi thi triển Chiêu
+                                    Cuối.</li>
+                                <li>Sửa một lỗi khiến bản sao của Neeko không hiển thị chính xác Vinh Danh 5 hoặc hoạt
+                                    ảnh Biến Về Thách Đấu.</li>
+                                <li>Sửa một lỗi khiến Briar đôi khi tấn công đồng đội khi Hóa Cuồng.</li>
+                                <li>Sửa một lỗi khiến Q của Varus luôn hiển thị chỉ báo đường bay kể cả khi cài đặt đã
+                                    bị tắt.</li>
+                                <li>Sửa một lỗi khiến ngọn lửa của Jax Bóng Ma Hỏa Ảnh bị xếp sai vị trí trong hoạt ảnh
+                                    biến về.</li>
+                                <li>Sửa một lỗi khiến Jax sẽ sử dụng hoạt ảnh tấn công mặc định khi dùng W nếu đang có
+                                    cộng dồn nội tại.</li>
+                                <li>Sửa một lỗi khiến hoạt ảnh đánh thường từ chiêu W của Briar trên các tướng khác bị
+                                    chậm lại.</li>
+                                <li>Sửa một lỗi khiến giao diện của Sylas hiển thị Chiêu cuối không chính xác khi Tước
+                                    Đoạt chiêu cuối của Neeko.</li>
+                                <li>Sửa một lỗi khiến Hóa Cuồng của Briar kích hoạt mất kiểm soát nhấp nháy màn hình.
+                                </li>
+                                <li>Sửa một lỗi khiến trang bị đi rừng có thể được thêm lại vào túi đồ sau khi biến đổi
+                                    nếu bạn sử dụng tính năng hoàn tác trong cửa hàng.</li>
+                            </ul>
+                        </article>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            <div class="flex flex-col place-content-center text-center mt-5">
+                <div class="box w-fit mx-auto animate-pulse cursor-pointer" id="to-top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-arrow-up mx-auto">
+                        <path d="m5 12 7-7 7 7" />
+                        <path d="M12 19V5" />
+                    </svg>
+                    <span>Về đầu trang</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="shadow bg-gray-900">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="http://github.com/Zordhasapie"
+                    class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="../Assets/images/Me/me.jpg" class="h-8 rounded-full" alt="Zord" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Zord</span>
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-gray-400">
+                    <li>
+                        <a href="../About_Us.html" class="hover:underline me-4 md:me-6">About me</a>
+                    </li>
+                    <li>
+                        <a href="https://leagueoflegends.com/" class="hover:underline me-4 md:me-6">League of
+                            Legends</a>
+                    </li>
+                    <li>
+                        <a href="https://riotgames.com/" class="hover:underline me-4 md:me-6">Riot Games</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+            <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+            <span class="block text-sm text-center text-gray-400">Trang web sử dụng hình ảnh từ Riot Games. Mọi quyền
+                hình ảnh thuộc về Riot Games.</span>
+            <span class="block text-sm text-center text-gray-400">© 2023 <a href="http://github.com/Zordhasapie"
+                    class="hover:underline">Zord</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+
+
+    <!-- Main Scripts -->
+    <script src="../Assets/Scripts/app.js"></script>
+
+    <!-- Flowbite Js -->
+    <script src="../Assets/flowbite/flowbite.js"></script>
+
+    <!-- Lucide icons -->
+    <script src="../Assets/Scripts/lucide.min.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <!-- aos lib -->
+    <script src="../Assets/Scripts/aos.js"></script>
+
+    <!-- custom scripts -->
+
+</body>
+
+</html>

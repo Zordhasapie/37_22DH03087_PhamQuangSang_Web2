@@ -1,6 +1,13 @@
-
-footer {
-    background-color: #222;
+a {
+    cursor: pointer !important;
 }
-a{
-cursor: pointer !important;}
+.news-thumnail{
+    min-width: auto;
+    max-width: 440px;
+    min-height: auto;
+    max-height: 248px;
+}
+
+* {
+    font-family: Beaufort for LOL;
+}

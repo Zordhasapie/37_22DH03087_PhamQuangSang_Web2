@@ -4,10 +4,16 @@ module.exports = {
   "./**/*.{html,js}",
   "./node_modules/flowbite/**/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'riot-hover': '#4e7f86',
+        'riot-blur': '#76c7d5'
+      }
+    },
   },
   plugins: [
     require('tailwindcss'),
+    require('@tailwindcss/typography'),
     require('flowbite/plugin')
   ],
 }
