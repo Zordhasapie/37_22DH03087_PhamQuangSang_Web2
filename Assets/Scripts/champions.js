@@ -159,31 +159,63 @@ let img_paths = [
     "./../Assets/images/Champions/RiotX_ChampionList_zyra.jpg"
 ]
 
+class Champion {
+    constructor(name, img_path) {
+        this.name = name;
+        this.img_path = img_path;
+    }
+}
+
 
 $(document).ready(function () {
-
-    
-    $.each(img_paths, function (i, val) { 
-        let name = val.replace("./../Assets/images/Champions/RiotX_ChampionList_", "").replace(".jpg", "").replace("_v2", "").toUpperCase();
+    let champions = [];
+    $("#no_champ").hide();
+    $.each(img_paths, function (i, val) {
+        let name = val.replace("./../Assets/images/Champions/RiotX_ChampionList_", "").replace(".jpg", "").replace(/v\d/i, "").replaceAll("_", " ").toUpperCase();
+        let champ = new Champion(name, val);
+        champions.push(champ);
+        printCardContent(name, val)
+    });
+    function printCardContent(name, path) {
         let champ_card_content = `` +
-        `            <div class="custom-card bg-black overflow-hidden champ-card">` +
-        `                <a href="" class="flex flex-col w-full h-full relative">` +
-        `                    <img class="transition duration-500" src="${val}" alt="${name}">` +
-        `                    <div class="absolute inset-x-0 bottom-0 bg-slate-800 text-white text-2xl font-bold champ-name-box flex">` +
-        `                        <span class="my-auto ms-2 transition duration-500">${name}</span>` +
-        `                    </div>` +
-        `                </a>` +
-        `            </div>` +
-        ``;
+            `            <div class="custom-card bg-gradient-to-r from-slate-600 to-slate-800 overflow-hidden champ-card transition duration-500" id="${name}">` +
+            `                <a href="" class="flex flex-col w-full h-full relative">` +
+            `                    <img class="transition duration-500" src="${path}" alt="${name}">` +
+            `                    <div class="absolute inset-x-0 bottom-0 bg-slate-800 text-white transition duration-500 text-2xl font-bold champ-name-box flex">` +
+            `                        <span class="my-auto ms-2 transition duration-500">${name}</span>` +
+            `                    </div>` +
+            `                </a>` +
+            `            </div>` +
+            ``;
+
         $('#champions_pool').append(champ_card_content);
+    };
+    $("#search_champ").keyup(function () {
+        let search = $(this).val().toLowerCase();
+        $(".champ-card").each(function () {
+            let champ_name = $(this).attr('id').toLowerCase();
+            if (champ_name.includes(search)) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+            if ($(".champ-card:visible").length == 0) {
+                $("#no_champ").show();
+            }else{
+                $("#no_champ").hide();
+            }
+        });
     });
     $('.champ-card').hover(function () {
         // over
-        console.log("over");
+        // $('div', this).removeClass('bg-slate-800');
+        $('div', this).addClass('bg-gradient-to-r from-slate-600 to-slate-800');
         $('img', this).addClass('scale-115');
         $('span', this).addClass('translate-x-5');
     }, function () {
         // out
+        $('div', this).removeClass('bg-gradient-to-r from-slate-600 to-slate-800');
+        // $('div', this).addClass(`bg-slate-800`);
         $('img', this).removeClass('scale-115');
         $('span', this).removeClass('translate-x-5');
     }
