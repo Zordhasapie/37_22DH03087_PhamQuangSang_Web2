@@ -12,6 +12,8 @@
     <!-- Tailwind -->
     <link rel="stylesheet" href="../Assets/Styles/tailwind.css">
 
+    <!-- FONT LOADER -->
+    <link rel="stylesheet" href="../Assets/Styles/font.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="../Assets/Styles/app.css">
@@ -19,13 +21,11 @@
 
     <!-- Custom css -->
     <style>
-        #banner-image {
-            margin-bottom: -50px;
-        }
     </style>
 </head>
 
 <body>
+
     <!-- navigation -->
     <header class="w-full inset-x-0 top-0 z-0 mx-auto bg-black text-gray-400">
         <nav class="flex flex-row h-16 justify-between items-center">
@@ -54,54 +54,117 @@
 
             <div class="nav-list hidden sm:ml-6 sm:block">
                 <div class="flex space-x-4">
-                    <a href="#"
-                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Game</a>
-                    <a href="#"
-                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Champions</a>
-                    <a href="#"
-                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">News</a>
-                    <a href="#"
-                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Patch
-                        Notes</a>
-                    <a href="#"
-                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Discover</a>
-                    <a href="#"
-                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Esports</a>
+                    <a href="./../index.html"
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="../champions/index.html"
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Tướng</a>
+                    <a href="../News/index.html"
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Tin
+                        Tức</a>
+                    <a href="../Player/index.html"
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Tuyển
+                        Thủ</a>
+                    <a href="../News/patch_notes.html"
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">Phiên
+                        bản</a>
+                    <a href="../About_Us.html"
+                        class="bg-dark text-slate-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium">About
+                        Us</a>
                 </div>
 
             </div>
 
             <div class="nav-end order-last">
-                <button type="button"
-                    class="px-4 py-2 font-semibold text-sm bg-slate-700 text-white border border-slate-300 dark:border-slate-600 hover:border-indigo-300 dark:hover:border-indigo-500 rounded-md shadow-sm mr-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300">
-                    Buy organs now
+                <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
+                    class="inline-flex items-center p-2 text-sm font-medium text-center rounded-lg focus:ring-4 focus:outline-none text-white bg-gray-800 hover:bg-gray-700 focus:ring-gray-600 me-5"
+                    type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-user-2 w-5 h-5">
+                        <circle cx="12" cy="8" r="5" />
+                        <path d="M20 21a8 8 0 1 0-16 0" />
+                    </svg>
                 </button>
+
+                <!-- Dropdown menu -->
+                <div id="dropdownDots" class="z-10 hidden divide-y  rounded-lg shadow w-44 bg-gray-700 divide-gray-600">
+                    <ul class="py-2 text-sm  text-gray-200" aria-labelledby="dropdownMenuIconButton">
+                        <li>
+                            <span href="#" class="block px-4 py-2">Người dùng:<span
+                                    class="font-bold mx-1">Khách</span></span>
+                        </li>
+                    </ul>
+                    <div class="py-2">
+                        <a href="../Auth/login.html" class="flex flex-row px-4 py-2 text-sm  hover:bg-gray-600 text-gray-200 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-log-in w-4 h-4 mt-1">
+                                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+                                <polyline points="10 17 15 12 10 7" />
+                                <line x1="15" x2="3" y1="12" y2="12" />
+                            </svg><span class="ms-1">
+                                Đăng nhập</span></a>
+                    </div>
+                </div>
+
             </div>
         </nav>
 
     </header>
+    <!-- end navigation -->
+
     <main>
-        
+
     </main>
 
-    <footer style="height: 1000px;">
 
+    <footer class="shadow bg-gray-900">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="http://github.com/Zordhasapie"
+                    class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="../Assets/images/Me/me.jpg" class="h-8 rounded-full" alt="Zord" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Zord</span>
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-gray-400">
+                    <li>
+                        <a href="../About_Us.html" class="hover:underline me-4 md:me-6">About me</a>
+                    </li>
+                    <li>
+                        <a href="https://leagueoflegends.com/" class="hover:underline me-4 md:me-6">League of
+                            Legends</a>
+                    </li>
+                    <li>
+                        <a href="https://riotgames.com/" class="hover:underline me-4 md:me-6">Riot Games</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+            <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+            <span class="block text-sm text-center text-gray-400">Trang web sử dụng hình ảnh từ Riot Games. Mọi quyền
+                hình ảnh thuộc về Riot Games.</span>
+            <span class="block text-sm text-center text-gray-400">© 2023 <a href="http://github.com/Zordhasapie"
+                    class="hover:underline">Zord</a>. All Rights Reserved.</span>
+        </div>
     </footer>
 
+
     <!-- Main Scripts -->
-    <script src="./Assets/Scripts/app.js"></script>
+    <script src="../Assets/Scripts/app.js"></script>
 
     <!-- Flowbite Js -->
-    <script src="./Assets/flowbite/flowbite.js"></script>
+    <script src="../Assets/flowbite/flowbite.js"></script>
 
     <!-- Lucide icons -->
-    <script src="./Assets/Scripts/lucide.min.js"></script>
+    <script src="../Assets/Scripts/lucide.min.js"></script>
     <script>
         lucide.createIcons();
     </script>
 
     <!-- aos lib -->
-    <script src="./Assets/Scripts/aos.js"></script>
+    <script src="../Assets/Scripts/aos.js"></script>
 
     <!-- custom scripts -->
 
